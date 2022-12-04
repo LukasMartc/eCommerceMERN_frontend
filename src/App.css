@@ -1,0 +1,581 @@
+body {
+    font-family: 'Calibri Light', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    color: white;
+    background-image: linear-gradient(to left, #2736ba, #327ceb);
+    padding: 15px 55px;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home,
+.catalog,
+.signin,
+.signup {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin-top: 0 10px;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #2230a8;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.home:hover,
+.catalog:hover,
+.signin:hover {
+    text-decoration: underline;
+}
+
+.signup:hover {
+    background-color: #ed6c02;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.main-header {
+    background-image: linear-gradient(to left, #2736ba, #327ceb);
+    padding: 50px 100px
+}
+
+.products-header {
+    margin: 0;
+    color: #ed6c02;
+}
+
+@media (max-width: 450px) {
+    .main-header {
+        padding: 50px 10px;
+    }
+}
+
+.container-newslatter {
+    background-image: linear-gradient(to left, #2736ba, #327ceb);
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: white;
+}
+
+.title-newslatter {
+    font-size: 24px;
+    margin: 15px 0 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 15px;
+    height: 100%;
+}
+
+.form-box {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ececec;   
+}
+
+.form-box input {
+    font-size: 15px;
+    color: #000;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background-color: #ececec;
+    width: 300px;
+}
+
+.form-box button {
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ed6c02;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-box button:hover {
+    background-color: #d16105;
+}
+
+footer {
+    margin: 0 68px;
+}
+
+.logo-footer {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.slogan-footer {
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d3c2a7;
+    width: 23.2px;
+    height: 23.2px;
+    border-radius: 50px;
+}
+
+.icon {
+    color: #d3c2a7;
+}
+
+.title-links {
+    margin: 0 0 20px;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: #000;
+}
+
+.links-footer:hover {
+    color: #d3c2a7;
+}
+
+.container-grid {
+    margin: 70px 100px 0 100px;
+}
+
+.container-change-signin,
+.container-change-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: white;
+    background-image: linear-gradient(to left, #2736ba, #327ceb);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.container-change-signin {
+    height: 88.3%;
+}
+
+.container-change-signup {
+    height: 84.5%;
+}
+
+.container-change-signin p,
+.container-change-signup p {
+    text-align: center;
+}
+
+.container-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 100px;
+    border: 1px solid;
+    border-color: linear-gradient(to left, #2736ba, #327ceb);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.form-register,
+.form-login,
+.form-forget-password,
+.form-new-password {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.main-forget-password,
+.main-new-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 100px 0 100px;
+}
+
+.container-forget-password,
+.container-new-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: linear-gradient(to left, #2736ba, #327ceb);
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.container-forget-password h2,
+.container-new-password h2 {
+    text-align: center;
+}
+
+
+.alert-confirm-account {
+    width: 100%;
+}
+
+.link-change-login {
+    margin-top: 10px;
+}
+
+.container-profile {
+    margin: 80px 200px 0 200px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-profile h2 {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.sidebar-profile {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to left, #2736ba, #327ceb);
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 100%;
+}
+
+.sidebar-profile ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sidebar-profile ul .nav-links-profile {
+    color: white;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.sidebar-profile ul .nav-links-profile:hover {
+    color: #ed6c02;
+}
+
+.sidebar-profile ul .nav-links-profile li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-profile ul .nav-links-profile li span {
+    padding-left: 7px;
+    text-align: start;
+}
+
+.my-account,
+.container-register-admin,
+.container-inventary {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 100%;
+}
+
+.title-mydata,
+.title-newsletter-profile,
+.title-my-addresses,
+.title-register-admin,
+.data-name,
+.data-email,
+.data-newslatter,
+.data-my-addresses {
+    margin: 0;
+}
+
+.attach-image {
+    text-align: center;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 5px;
+    height: 56px;
+}
+
+.attach-image p {
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-products {
+    display: flex;
+    margin: 50px 100px 0 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.main-info-producto {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px 0 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-info-producto h2 {
+    text-align: center;
+    font-size: 27px;
+}
+
+.brand-price,
+.color-stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0
+}
+
+.container-helper-price,
+.container-helper-stock {
+    width: 125px;
+    float: right;
+}
+
+.brand,
+.price,
+.color,
+.stock {
+    margin: 5px 0
+}
+
+.title-features,
+.title-others {
+    margin: 0;
+    font-size: 24px;
+}
+
+.characteristic {
+    margin: 10px 0;
+}
+
+.title-product {
+    margin: 22.5px 0 0;
+    text-align: start;
+}
+
+.box-title-product {
+    display: flex;
+}
+
+.box-btns-admins {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        text-align: center;
+    }
+    
+    .title-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-register {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-change-signin,
+    .container-change-signup {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 50px;
+    }
+
+    .container-register {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 50px;
+        border-top: none;
+    }
+
+    .container-grid {
+        margin: 35px 25px 0 25px;
+    }
+
+    .container-helper-price,
+    .container-helper-stock {
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-btns-admins {
+        float: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar-profile { 
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0;
+    }
+
+    .my-account,
+    .container-register-admin {
+        border-left: 1px solid;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0;
+    }
+
+    .container-profile {
+        margin: 30px ;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-box input {
+        width: 150px;
+    }
+    
+    .description-newsletter {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .container-newslatter {
+        margin: 0 20px;
+    }
+
+    .main-products {
+        margin: 50px 25px 0 25px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-image: linear-gradient(to left, #171f67, #1f53a1);
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        padding: 0;
+    }
+
+    .home,
+    .catalog,
+    .signin,
+    .signup {
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .signup {
+        background-color: none;
+        border-radius: none;
+        transition: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+
+    .signup {
+        background-color: transparent;
+        border-radius: none;
+        transition: none;
+    }
+    
+    .home:hover,
+    .catalog:hover,
+    .signin:hover {
+        text-decoration: underline;
+    }
+    
+    .signup:hover {
+        background-color: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-products {
+        margin: 50px 100px 0 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-products {
+        margin: 50px 25px 0 25px;
+    }
+}
